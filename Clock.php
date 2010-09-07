@@ -13,6 +13,6 @@ class Clock extends CPortlet
 
 	protected function renderContent()
 	{
-		$this->render('analog-clock');
+		$this->render('analogue-clock');
 	}
 }
