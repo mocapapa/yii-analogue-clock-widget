@@ -1,5 +1,6 @@
-Clock.php ----------------- Portlet class file (protected/components/)
-analog-clock-hands.png ---- Clock hands image sprite (images/)
-analog-clock.php ---------- View file (protected/components/view/)
-analog-clock-base.png ----- Clock image base (images/)
-screenshot.jpg ------------ Screenshot of the skeleton application
+README ---------------------- This file
+Clock.php ------------------- Portlet class file (protected/components/)
+analogue-clock-hands.png ---- Clock hands image sprite (images/)
+analogue-clock.php ---------- View file (protected/components/view/)
+analogue-clock-base.png ----- Clock image base (images/)
+screenshot.jpg -------------- Screenshot of the skeleton application
