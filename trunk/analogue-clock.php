@@ -1,9 +1,5 @@
 <center>
 <!-- $Id$ -->
-<?php
-  $clockOffsetX = 25;
-  $clockOffsetY = 2;
-?>
 <div style="position: relative;">
   <img src="<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-base.png">
     <div class="hourHand" style="width:104px;height:104px;background-image:url(<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-hands.png);background-repeat:no-repeat;position:absolute;"></div>
