@@ -6,13 +6,21 @@
 ?>
 <div style="position: relative;">
   <img src="<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-base.png">
-    <div class="hourHand" style="width:104px;height:104px;background-image:url(<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-hands.png);background-repeat:no-repeat;top:<?php echo $clockOffsetY;?>px;left:<?php echo $clockOffsetX;?>px;position:absolute;"></div>
-    <div class="minuteHand" style="width:104px;height:104px;background-image:url(<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-hands.png);background-repeat:no-repeat;top:<?php echo $clockOffsetY;?>px;left:<?php echo $clockOffsetX;?>px;position:absolute;"></div>
-    <div class="secondHand" style="width:104px;height:104px;background-image:url(<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-hands.png);background-repeat:no-repeat;top:<?php echo $clockOffsetY;?>px;left:<?php echo $clockOffsetX;?>px;position:absolute;"></div>
+    <div class="hourHand" style="width:104px;height:104px;background-image:url(<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-hands.png);background-repeat:no-repeat;position:absolute;"></div>
+    <div class="minuteHand" style="width:104px;height:104px;background-image:url(<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-hands.png);background-repeat:no-repeat;position:absolute;"></div>
+    <div class="secondHand" style="width:104px;height:104px;background-image:url(<?php echo Yii::app()->request->baseUrl;?>/images/analogue-clock-hands.png);background-repeat:no-repeat;position:absolute;"></div>
 </div>
 <script type="text/javascript">
    /*<![CDATA[*/
    $(document).ready(function() {
+       var left = $(".clock_window").width()/2-104/2;
+       $(".hourHand").css('left', left+'px');
+       $(".minuteHand").css('left', left+'px');
+       $(".secondHand").css('left', left+'px');
+       var top = $(".clock_window").height()/2-104/2;
+       $(".hourHand").css('top', top+'px');
+       $(".minuteHand").css('top', top+'px');
+       $(".secondHand").css('top', top+'px');
        animation();
        setInterval(function(){
            animation();
